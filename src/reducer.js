@@ -21,7 +21,10 @@ export const reducer = (state = [], action) => {
 				bug.id !== action.payload.id;
 			});
 		default: {
-			console.log("reducer defaulted");
+			const def = () => {
+				console.log("reducer defaulted!");
+			};
+			def();
 			return state;
 		}
 	}
